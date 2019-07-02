@@ -1,0 +1,175 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>张嘉睿的主页</title>
+	</head>
+	
+	<body>
+	
+		<div id="header">
+			<div id="selects">
+				<ul id="menu">
+					<li><a href="index.html">MAIN</a></li>
+					<li><a href="articles.html">ARTICLES</a></li>
+					<li><a href="aboutme.html">ABOUT ME</a></li>
+				</ul>
+			</div>
+			<h1>张嘉睿的主页</h1>
+		</div>
+		
+		<div id="container">
+			 
+			 <div id="sheet">
+				<div id="article">
+					<h3>初识前端</a></h3>
+					<p id="date"> 2019-07-01</p>
+					
+					<p> 在经历了连续复习了两个半星期的考试周之后，前端小学期如期而至。</p>
+					<p> 在小学期之前，我一直对前端工作有着些许期待，因为网页设计是一项富有创造性地工作，网页的呈现多样而精彩，利用自己的双手将网页中的具体信息传达给浏览网页的人，让他们在收获知识的同时舒活一份好心情，也能让我有成就感。</p>
+					<p> 然而，今天的课程告诉了我想要真正写出炫酷的网页还是要下很大一番功夫的。在3节小课中，老师讲授了HTML和CSS的基础知识。HTML的语法清晰简洁，编写起来并不困难。但是如果希望一个网页和你想象的一样展示在浏览者面前，就必须深入理解CSS的各种属性以及继承关系。</p>
+					<p> 在编写网页的过程中也是如此，网页的内容不多，但让网页按照自己的方法排版确实需要下很大功夫。</p>
+					<p> 希望在接下来的前端课程中，我可以得到充分的锻炼，成为一名合格的前端开发者。</p>
+		
+				</div>
+				
+			 </div>
+			 
+			 <div id="tools">
+				 <p>上一篇：无</p>
+				 <p>下一篇：无</p>
+				 <p id="return"><a href="articles.html"><<返回</a></p>
+			 </div>
+			 
+			 
+		</div>
+		
+		<div id="footer">
+			<p id="copyright"> CopyRight © 2019 Zhang Jiarui</p>
+		</div>
+		
+		
+	</body>
+	
+</html>
+
+<style>
+
+*{
+	margin:0;
+	paddle:0;
+	font-family:Arial,'Times New Roman','Microsoft Yahei',SimHei; 
+
+}
+
+body{
+	text-align:center;
+	font-size:20px;
+}
+
+#header{
+	width:100%;
+	background-image:url("sakura.png");
+	background-size:cover;
+}
+
+#selects{
+	text-align:left;
+}
+
+#menu li{
+	display:inline;
+	margin:10px;
+}
+
+#menu li a{
+	text-decoration:none;
+	color:#F0F0F0;
+}
+
+#menu li a:hover{
+	color:#C0C0C0;
+}
+
+#header h1{
+	color:#FFFFFF;
+	font-family:"华文行楷";
+	font-size:40px;
+	font-weight:normal;
+	padding:50px;
+}
+
+#container{
+	background-color:#FFFFFF;
+	margin: 10px;
+}
+
+#sheet{
+	display:flex;
+	align-items: left;
+	flex-direction:column;
+	text-align:left;
+	margin-left:2em;
+	margin-right:2em;
+	margin-top:2em;
+	
+}
+
+#article{
+	align-items: center;	
+	justify-content:space-between;
+	margin: 5px;
+	border-bottom: 2px dashed #888;
+}
+
+
+#article p{
+	font-size: 18px;
+	text-indent:2em;
+	line-height:1.5em;
+	margin:5px;
+}
+
+#article #date{
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-indent:0em;
+}
+
+#footer{
+	border-top: 1px solid #808080;
+	width:100%;
+}
+
+#tools{
+	text-align:left;
+	font-size:15px;
+	margin-left:2em;
+	margin-right:2em;
+	
+}
+
+#tools #return{
+	text-align:right;
+	text-decoration:none;
+	color:#0177DB;
+}
+
+#tools a{
+	text-decoration:none;
+	color:#0177DB;
+}
+
+#tools a:hover{
+	color:#808;
+}
+
+#copyright{
+	color:#808080;
+	padding: 20px;
+	font-size:10px;
+}
+
+</style>
