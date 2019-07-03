@@ -21,13 +21,13 @@
 		
 		<div id="container">
 			 
-			 <h2> 文章列表 </h2>
+			<h2> 文章列表 </h2>
 			 
-			 <div id="sheet">
+			<div id="sheet">
 			 
-				<div id="article">
+				<div class="article">
 					<h3><a href="article2.html">个人主页编写感悟</a></h3>
-					<p id="date"> 2019-07-03</p>
+					<p class="date"> 2019-07-03</p>
 					
 					<p> 我的个人主页已于昨天正式上线。</p>
 					<p> 这次的个人主页编写的作业确实在实际应用中检验了我对HTML和CSS的编写的熟练程度，在个人主页编好之后我也可以说我已经掌握了基础的HTML和CSS编写的能力了。</p>
@@ -36,9 +36,9 @@
 					<p> 此外，我还意识到模块化的方法很重要，在遇到重复的类型的时候，模块化的方法可以省去重写排版的过程。</p>
 				</div>
 				
-				<div id="article">
+				<div class="article">
 					<h3><a href="article1.html">初识前端</a></h3>
-					<p id="date"> 2019-07-01</p>
+					<p class="date"> 2019-07-01</p>
 					
 					<p> 在经历了连续复习了两个半星期的考试周之后，前端小学期如期而至。</p>
 					<p> 在小学期之前，我一直对前端工作有着些许期待，因为网页设计是一项富有创造性地工作，网页的呈现多样而精彩，利用自己的双手将网页中的具体信息传达给浏览网页的人，让他们在收获知识的同时舒活一份好心情，也能让我有成就感。</p>
@@ -123,30 +123,30 @@ body{
 	
 }
 
-#article{
+.article{
 	align-items: center;	
 	justify-content:space-between;
 	margin: 5px;
 	border-bottom: 2px dashed #888;
 }
 
-#article h3 a{
+.article h3 a{
 	text-decoration:none;
 	color:#0177DB;
 }
 
-#article h3 a:hover{
+.article h3 a:hover{
 	color:#808;
 }
 
-#article p{
+.article p{
 	font-size: 18px;
 	text-indent:2em;
 	line-height:1.5em;
 	margin:5px;
 }
 
-#article #date{
+.article .date{
 	font-size: 15px;
 	margin-top: 10px;
 	margin-bottom: 10px;
