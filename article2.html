@@ -21,12 +21,9 @@
 		
 		<div id="container">
 			 
-			 <h2> 文章列表 </h2>
-			 
 			 <div id="sheet">
-			 
 				<div id="article">
-					<h3><a href="article2.html">个人主页编写感悟</a></h3>
+					<h3>个人主页编写感悟</h3>
 					<p id="date"> 2019-07-03</p>
 					
 					<p> 我的个人主页已于昨天正式上线。</p>
@@ -36,19 +33,15 @@
 					<p> 此外，我还意识到模块化的方法很重要，在遇到重复的类型的时候，模块化的方法可以省去重写排版的过程。</p>
 				</div>
 				
-				<div id="article">
-					<h3><a href="article1.html">初识前端</a></h3>
-					<p id="date"> 2019-07-01</p>
-					
-					<p> 在经历了连续复习了两个半星期的考试周之后，前端小学期如期而至。</p>
-					<p> 在小学期之前，我一直对前端工作有着些许期待，因为网页设计是一项富有创造性地工作，网页的呈现多样而精彩，利用自己的双手将网页中的具体信息传达给浏览网页的人，让他们在收获知识的同时舒活一份好心情，也能让我有成就感。</p>
-					<p> 然而，今天的课程告诉了我想要真正写出炫酷的网页还是要下很大一番功夫的。在3节小课中，老师讲授了HTML和CSS的基础知识。HTML的语法清晰简洁，编写起来并不困难。但是如果希望一个网页和你想象的一样展示在浏览者面前，就必须深入理解CSS的各种属性以及继承关系。</p>
-					<p> 在编写网页的过程中也是如此，网页的内容不多，但让网页按照自己的方法排版确实需要下很大功夫。</p>
-					<p> 希望在接下来的前端课程中，我可以得到充分的锻炼，成为一名合格的前端开发者。</p>
-		
-				</div>
-				
 			 </div>
+			 
+			 <div id="tools">
+				 <p>上一篇：<a href="article1.html">初识前端</a></p>
+				 <p>下一篇：无</p>
+				 <p id="return"><a href="articles.html"><<返回</a></p>
+			 </div>
+			 
+			 
 		</div>
 		
 		<div id="footer">
@@ -61,6 +54,7 @@
 </html>
 
 <style>
+
 *{
 	margin:0;
 	paddle:0;
@@ -119,7 +113,9 @@ body{
 	align-items: left;
 	flex-direction:column;
 	text-align:left;
-	margin:2em;
+	margin-left:2em;
+	margin-right:2em;
+	margin-top:2em;
 	
 }
 
@@ -130,14 +126,6 @@ body{
 	border-bottom: 2px dashed #888;
 }
 
-#article h3 a{
-	text-decoration:none;
-	color:#0177DB;
-}
-
-#article h3 a:hover{
-	color:#808;
-}
 
 #article p{
 	font-size: 18px;
@@ -156,6 +144,29 @@ body{
 #footer{
 	border-top: 1px solid #808080;
 	width:100%;
+}
+
+#tools{
+	text-align:left;
+	font-size:15px;
+	margin-left:2em;
+	margin-right:2em;
+	
+}
+
+#tools #return{
+	text-align:right;
+	text-decoration:none;
+	color:#0177DB;
+}
+
+#tools a{
+	text-decoration:none;
+	color:#0177DB;
+}
+
+#tools a:hover{
+	color:#808;
 }
 
 #copyright{
