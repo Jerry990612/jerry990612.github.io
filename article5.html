@@ -1,0 +1,184 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>张嘉睿的主页</title>
+	</head>
+	
+	<body>
+	
+		<div id="header">
+			<div id="selects">
+				<ul id="menu">
+					<li><a href="index.html">MAIN</a></li>
+					<li><a href="articles.html">ARTICLES</a></li>
+					<li><a href="aboutme.html">ABOUT ME</a></li>
+				</ul>
+			</div>
+			<h1>张嘉睿的主页</h1>
+		</div>
+		
+		<div id="container">
+			 
+			<div id="sheet">
+				<div id="article">
+					<h3>综合实验：微信小程序开发感悟</h3>
+					<p id="date"> 2019-07-21</p>
+					
+					<p> 随着2017年发布的第一款微信小游戏“跳一跳”在全国风靡，各种微信小游戏如雨后春笋般出现，小游戏逐渐在微信生态中占据了一席之地。</p>
+					<p> 开发微信小游戏所用的主要语言是JavaScript或TypeScript，利用本次前端小学期的所学知识开发微信小游戏正是检验我的学习成果和锻炼我编程开发能力的好机会，利用一个星期的时间，我和我的队友一起开发了一款冒险类卡牌游戏</p>
+					<p> 我们的目标是开发一款2D的游戏，因此选用了cocos creator进行开发，首先我们学习cocos creator的文档，对cocos creator开发有了基本的认识，然后我们开始了程序的编写。</p>
+					<p> 我所负责的部分是游戏的菜单界面以及游戏内商店、卡牌包，游戏数据的存取，游戏背景音乐的加入等工作。</p>
+					<p> 游戏的彩蛋部分主要是用户通过按钮点按来与界面交互，利用触摸事件即可解决。在菜单栏中主要功能是进行设置，在商店中购买卷轴，在角色框中购买并选择角色，查看最高分，以及开始游戏</p>
+					<p> 此外，我还设置了常驻节点data来存储用户的数据，并利用微信提供的本地存储接口将数据存储在本地，再次进入游戏时可以进行加载。</p>
+					<p> 由于游戏类型的缘故，编写过程中涉及的逻辑控制很多，这加大了我们编程的工作量，但是我们克服了这些困难，完成了游戏的编写。</p>
+					<p> 微信小游戏的包大小限制为4MB以下，这需要严格控制资源大小，最后我选择了裁剪图片大小以及压缩音乐的方式使包大小符合了要求。</p>
+					<p> 总体来说这一次游戏的开发结果还算不错，这段经历锻炼了我JavaScript的开发能力，这次前端小学期也使我得到了一项新的技能，感谢各位老师和助教的付出以及悉心指导。</p>
+					
+					
+				</div>
+				
+			</div>
+			 
+			<div id="tools">
+				<p>上一篇：<a href="article4.html">基础实验4：JavaScript编程感悟</a></p>
+				<p>下一篇：无</p>
+				<p id="return"><a href="articles.html"><<返回</a></p>
+			</div>
+			 
+			 
+		</div>
+		
+		<div id="footer">
+			<p id="copyright"> CopyRight © 2019 Zhang Jiarui</p>
+		</div>
+		
+		
+	</body>
+	
+</html>
+
+<style>
+
+*{
+	margin:0;
+	paddle:0;
+	font-family:Arial,'Times New Roman','Microsoft Yahei',SimHei; 
+
+}
+
+body{
+	text-align:center;
+	font-size:20px;
+}
+
+#header{
+	width:100%;
+	background-image:url("sakura.jpg");
+	background-size:cover;
+}
+
+#selects{
+	text-align:left;
+}
+
+#menu{
+	padding:20px;
+}
+
+#menu li{
+	display:inline;
+	margin:10px;
+}
+
+#menu li a{
+	text-decoration:none;
+	color:#FFF;
+}
+
+#menu li a:hover{
+	color:#CCC;
+}
+
+#header h1{
+	color:#FFFFFF;
+	font-family:"华文行楷",SimHei;
+	font-size:40px;
+	font-weight:normal;
+	padding:50px;
+}
+
+#container{
+	background-color:#FFFFFF;
+	margin: 10px;
+}
+
+#sheet{
+	display:flex;
+	align-items: left;
+	flex-direction:column;
+	text-align:left;
+	margin-left:2em;
+	margin-right:2em;
+	margin-top:2em;
+	
+}
+
+#article{
+	align-items: center;	
+	justify-content:space-between;
+	margin: 5px;
+	border-bottom: 2px dashed #888;
+}
+
+
+#article p{
+	font-size: 18px;
+	text-indent:2em;
+	line-height:1.5em;
+	margin:5px;
+}
+
+#article #date{
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-indent:0em;
+}
+
+#footer{
+	border-top: 1px solid #808080;
+	width:100%;
+}
+
+#tools{
+	text-align:left;
+	font-size:15px;
+	margin-left:2em;
+	margin-right:2em;
+	
+}
+
+#tools #return{
+	text-align:right;
+	text-decoration:none;
+	color:#0177DB;
+}
+
+#tools a{
+	text-decoration:none;
+	color:#0177DB;
+}
+
+#tools a:hover{
+	color:#808;
+}
+
+#copyright{
+	color:#808080;
+	padding: 20px;
+	font-size:10px;
+}
+
+</style>
